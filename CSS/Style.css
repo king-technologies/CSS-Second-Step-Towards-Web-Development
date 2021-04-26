@@ -1,0 +1,217 @@
+/* External CSS */
+
+/* Universal Selector */
+* {
+    /* Reset */
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #dfdddd;
+    color: #444;
+    /* For Color you have 
+    Color Names, Hexadecimal Values #444,#444444, rgb(44,33,22), rgba(121,22,22,0.5)
+    */
+}
+
+p {
+    /* color: rgb(121, 22, 22);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5em; */
+    /* word-spacing: 1.5em; */
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+a:active {
+    color: yellowgreen;
+
+}
+
+a:visited {
+    color: rgb(13, 170, 26);
+}
+
+
+section {
+    width: 60%;
+    margin: auto;
+}
+
+.main-1 {
+    background-color: grey;
+    color: #fff;
+
+    /* margin: 10px 20px 30px 40px; */
+
+    padding: 20px;
+
+
+    margin: 20px;
+    border: 4px solid blue;
+    border-right-color: red;
+
+    /* Box Model */
+}
+
+.main-1 h1 {
+    margin-bottom: 20px;
+    text-decoration: underline;
+    letter-spacing: 4px;
+}
+
+#main-2 {
+    padding: 25px;
+    margin: 20px;
+    border: 1px #444 solid;
+    border-radius: 30px;
+}
+
+#main-2 h1 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+#main-2 ul {
+    margin-top: 20px;
+    /* list-style: none; */
+    text-align: center;
+    list-style-position: inside;
+}
+
+#main-2 ul li {
+    margin-bottom: 5px;
+    border-bottom: 1px rgb(255, 0, 0) solid;
+}
+
+.main-3 {
+    padding: 25px;
+    margin: 20px;
+    border: 1px #444 solid;
+    border-radius: 30px;
+}
+
+.main-3 h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.main-3 form label {
+    display: block;
+    font-size: 24px;
+}
+
+.main-3 form input[type="text"],
+.main-3 form input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.button {
+    background-color: white;
+    border: 0;
+    outline: 0;
+    color: black;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/* Align and Float Properties */
+
+.block1,
+.block2,
+.block3 {
+    width: 33.3%;
+    float: left;
+    border: 1px solid grey;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.clear-fix {
+    clear: both;
+}
+
+.aside {
+    margin-top: 20px;
+    width: 60%;
+    float: left;
+}
+
+.sidebar {
+    margin-top: 20px;
+    width: 30%;
+    float: right;
+    border: 1px solid grey;
+    padding: 20px;
+}
+
+/* CSS Positions */
+/* Relative, absolute, fixed ,static */
+.s-box {
+    width: 600px;
+    height: 300px;
+    border: 1px solid grey;
+    position: relative;
+}
+
+.s-box h1 {
+    position: absolute;
+    /* top: 50px;
+    left: 100px; */
+    bottom: 20px;
+    right: 10px;
+}
+
+.s-box h2 {
+    position: absolute;
+    top: 200px;
+    right: 100px;
+}
+
+.fixed-p {
+    position: fixed;
+    top: 400px;
+    left: 0px;
+}
+
+/* CSS Background */
+.s-box {
+    background-image: url("../bg.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* CSS Pseudo Classes */
+.pseudo h2:first-child,
+h2:last-child {
+    color: red;
+}
+
+.pseudo h2:nth-child(even) {
+    background-color: darkblue;
+}
